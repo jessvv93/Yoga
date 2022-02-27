@@ -1,0 +1,89 @@
+body {background-color: #40407A;
+        color:#40407A;
+        font-family: Verdana, Arial, sans-serif;
+        margin: 0;}
+* { box-sizing: border-box;}
+#flow {display: block;}
+#wrapper {background-color: #F5F5F5;
+        padding: 2em;}
+.home { padding-top: 2em;
+        padding-left: 10%;
+        height: 20vh;}
+.content {height: 20vh;
+        padding-top: 2em;
+        padding-left: 10%;}
+header {background-color: #40407A;
+        color: #FFFFFF;
+        background-image: url(sunrise.jpg);
+        background-size:100% 100%; margin-top: 50px;
+        font-size:90%;
+        min-height:200px;}
+header a{text-decoration:none;
+         transition:color 10s ease-out; }
+header a:link{color:#FFFFFF;}
+header a:visited{color:#FFFFFF;}
+header a:hover{color:#8F92B2;}
+nav {   position: fixed; top: 0; left:0;
+        height: auto; width: 100%;
+        background-color: #FFFFFF;
+        text-align: right;
+        padding-top: 0.5em ;
+        padding-bottom: 1em;
+        padding-right:0;}
+nav a  { text-decoration: none;}
+nav a:link{color:#3F2860;}
+nav a:visited{color:#497777;}
+nav a:hover{color:#A26100;}
+nav ul { list-style-type: none;
+        text-align:right;
+        font-size:1.5em; margin:0;
+        padding-right: 2em;}
+nav li {display: inline;
+        padding-left:2em;
+        width:30%;}
+section {padding-left:.5em;
+         padding-right:.5em;}
+#mathro {       background-size: 100%  100%;
+                height: 300px;
+                background-repeat: no-repeat;
+                background-image: url(yogamat.jpg);
+                display: none;
+                padding-bottom:1em;}
+table  {       border: 1px solid #40407A;
+                margin-bottom: 1em;
+                min-width: 400px;
+                border-collapse: collapse;}
+td,th{          padding:0.5em;
+                border: 1px solid #40407A;}
+tr:nth-of-type(even) {background-color: #D7E8E9;}
+caption {       margin: 1em;
+                font-size: 120%;
+                font-weight: bold;}
+#loungehero {   background-size: 100% 100%;
+                height: 300px;
+                background-repeat: no-repeat;
+                background-image: url(yogalounge.jpg);
+                padding-bottom:1em;
+                display:none;}
+form {          display:flex;
+                flex-flow: column nowrap;}
+                input, datalist textarea{margin-bottom:.5em;}
+footer {   text-align: center;
+        font-style: italic;
+        font-size: .80em;}
+@media (min-width: 600px) {nav ul {display: flex; flex-wrap: nowrap; justify-content: flex-end;}
+                             nav li {width: 7em;}
+                                section{padding-right:2em; padding-left:2em;}
+                                  #mathro {background-image: url(yogamat.jpg);
+                                  display:block; max-width: 100%; padding-bottom:1em;
+                                      background-size:cover;}
+                                      #loungehero {background-image: url(yogalounge.jpg);
+                                      display:block; max-width: 100%; padding-bottom:1em; background-size:cover;}
+                                         #flow {display: flex;
+                                         flex-direction: row;}}
+@media (min-width: 1024px) {header {font-size: 120%;}
+                                   nav {font-weight: bold;}
+                                    .home{ height: 50vh; padding-top:5em; padding-left: 8em;}
+                                      .content{ height:30vh;padding-top:2em;padding-left: 8em;}
+                                       #wrapper{ margin: auto; width: 80%;
+                                                 display:grid;}}
